@@ -1,9 +1,6 @@
-# test_math_functions.py
+
 import unittest
 
-# ===========================
-# Functions to Test
-# ===========================
 
 def add_numbers(a, b):
     """Adds two numbers."""
@@ -19,9 +16,7 @@ def divide_numbers(a, b):
         return None
     return a / b
 
-# ===========================
-# Unit Test Class
-# ===========================
+
 
 class TestMathFunctions(unittest.TestCase):
     
@@ -43,8 +38,6 @@ class TestMathFunctions(unittest.TestCase):
         self.assertIsNone(divide_numbers(10, 0))
         self.assertEqual(divide_numbers(-10, 2), -5)
 
-# ===========================
-# Run the Tests
-# ===========================
+
 if __name__ == '__main__':
     unittest.main()
